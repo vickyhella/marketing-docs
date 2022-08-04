@@ -241,7 +241,9 @@ The K10 dashboard is divided into several different sections, described below.
 
 The top of the K10 dashboard displays a list of applications currently mapped to namespaces, any policies that might exist in the system, and a summary of the cluster’s backup data footprint.
 
-[![rancher veeam kasten k10 dashboard overview top](https://documentation.suse.com/en-us/trd/kubernetes/single-html/kubernetes_gs_rancher_veeam-kasten/images/rancher_veeam-kasten_k10_dashboard_overview-top.png)](https://documentation.suse.com/en-us/trd/kubernetes/single-html/kubernetes_gs_rancher_veeam-kasten/images/rancher_veeam-kasten_k10_dashboard_overview-top.png)After filtering for applications that have stateful services (defined as containing a persistent volume), this screen further categorizes applications as:
+[![rancher veeam kasten k10 dashboard overview top](https://documentation.suse.com/en-us/trd/kubernetes/single-html/kubernetes_gs_rancher_veeam-kasten/images/rancher_veeam-kasten_k10_dashboard_overview-top.png)](https://documentation.suse.com/en-us/trd/kubernetes/single-html/kubernetes_gs_rancher_veeam-kasten/images/rancher_veeam-kasten_k10_dashboard_overview-top.png)
+
+After filtering for applications that have stateful services (defined as containing a persistent volume), this screen further categorizes applications as:
 
 - Unmanaged: There are no protection policies that cover this object.
 - Non-compliant: A policy applies to this object, but the actions associated with the policy are failing (because of underlying storage slowness, configuration problems, etc.) or the actions have not been invoked yet.
