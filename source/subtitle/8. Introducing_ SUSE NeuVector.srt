@@ -1,0 +1,104 @@
+﻿1
+00:00:03,600 --> 00:00:08,240
+if you're responsible for securing your organization's containerized deployments
+
+2
+00:00:08,240 --> 00:00:12,160
+you might be the victim of some risky assumptions regarding kubernetes security
+
+3
+00:00:12,160 --> 00:00:20,800
+many assume their cloud provider or other supplemental technologies will cover everything needed for kubernetes security
+
+4
+00:00:20,800 --> 00:00:23,439
+but they don't
+
+5
+00:00:23,439 --> 00:00:25,599
+with kubernetes being open source and notoriously hard to implement and understand
+
+6
+00:00:25,599 --> 00:00:29,840
+you can be left blind to what's happening in your network
+
+7
+00:00:29,840 --> 00:00:32,719
+that's where NeuVector comes in
+
+8
+00:00:32,719 --> 00:00:34,880
+as one of the only network security experts in the container space
+
+9
+00:00:34,880 --> 00:00:40,160
+NeuVector provides unmatched visibility automation
+
+10
+00:00:40,160 --> 00:00:44,719
+and control of all kubernetes network traffic and container processes
+
+11
+00:00:44,719 --> 00:00:50,079
+with NeuVector you gain comprehensive vulnerability scanning
+
+12
+00:00:50,079 --> 00:00:52,399
+to identify flaws throughout the application life cycle
+
+13
+00:00:52,399 --> 00:00:59,120
+automated behavioral learning to discover container processes inspect and validate network traffic
+
+14
+00:00:59,120 --> 00:01:01,440
+generate security policy as code
+
+15
+00:01:01,440 --> 00:01:04,159
+and enable virtual patching to prevent attacks
+
+16
+00:01:04,159 --> 00:01:08,880
+network security to prevent malware or attackers from traversing the entire network
+
+17
+00:01:08,880 --> 00:01:13,200
+including real-time blocking of zero day threats
+
+18
+00:01:13,200 --> 00:01:18,479
+and deep packet inspection for layer 7 visibility of all kubernetes defined and undefined network traffic
+
+19
+00:01:18,479 --> 00:01:31,040
+and compliance, the only solution to meet specific data security and network segmentation requirements for pci dss soc 2 and gdpr
+
+20
+00:01:31,040 --> 00:01:35,439
+essential for any company handling credit cards or personal and private information
+
+21
+00:01:35,439 --> 00:01:39,920
+as your trusted security advisor, NeuVector will help you meet and exceed the standards for container security
+
+22
+00:01:39,920 --> 00:01:49,520
+just as we've done for many leading companies across financial services insurance healthcare the public sector and e-commerce
+
+23
+00:01:49,520 --> 00:01:52,240
+kubernetes needs protection
+
+24
+00:01:52,240 --> 00:01:54,479
+NeuVector is the only solution you can rely on
+
+25
+00:01:54,479 --> 00:01:58,960
+to automate granular security processes and policies to protect your container deployments
+
+26
+00:01:58,960 --> 00:02:04,439
+from both known and unknown threats
+

@@ -1,0 +1,63 @@
+1
+00:00:01,120 --> 00:00:05,410
+harvester can also be managed from the
+standard rancher console
+
+2
+00:00:08,240 --> 00:00:12,400
+you just need to navigate to the virtualization management section and
+
+3
+00:00:12,400 --> 00:00:19,840
+you will get a very similar experience
+that the one you get when managing
+harvester directly
+
+4
+00:00:22,800 --> 00:00:28,359
+there are just a couple of differences as you can note
+
+5
+00:00:30,320 --> 00:00:33,280
+namespaces are also referred as projects
+
+6
+00:00:33,280 --> 00:00:38,880
+and you can configure
+rancho attack from this interface
+
+7
+00:00:41,760 --> 00:00:44,239
+as harvester is yet another provider for rancher
+
+8
+00:00:44,239 --> 00:00:51,680
+you can provision your own rke and rk2 clusters
+
+9
+00:00:53,600 --> 00:01:00,320
+you will follow the same procedure as you would do for any other provider
+
+10
+00:01:02,879 --> 00:01:10,840
+you can of course create your own template for your harvester deployment
+
+11
+00:01:13,360 --> 00:01:19,480
+please note that the options are very similar to any infrastructure provider
+
+12
+00:01:33,520 --> 00:01:37,759
+you can of course select multiples vms
+
+13
+00:01:38,240 --> 00:01:44,280
+and you just need to make sure you select harvester as your provider
+
+14
+00:01:58,640 --> 00:02:05,880
+in harvester you can also deploy your a key and your k3s clusters
+
+15
+00:02:11,120 --> 00:02:16,840
+you will pull all the options directly from the provider

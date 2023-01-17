@@ -1,0 +1,68 @@
+1
+00:00:01,040 --> 00:00:03,679
+installing harvester is a very easy task
+
+2
+00:00:03,679 --> 00:00:07,759
+you just need to download and install the iso we provide 
+
+3
+00:00:07,759 --> 00:00:10,320
+we will create a new cluster
+
+4
+00:00:11,040 --> 00:00:13,280
+then we will select the disk
+
+5
+00:00:13,280 --> 00:00:14,559
+we will provide the network configuration
+
+6
+00:00:14,559 --> 00:00:17,119
+including the host name
+
+7
+00:00:17,119 --> 00:00:20,080
+the management network interface
+
+8
+00:00:21,920 --> 00:00:25,039
+the dns server
+
+9
+00:00:26,880 --> 00:00:33,840
+and the custom token this token will be
+used to secure your harvester deployment
+
+10
+00:00:34,079 --> 00:00:38,079
+we need to provide the password to
+access to nodes
+
+11
+00:00:38,079 --> 00:00:40,879
+as well as the ntp configuration 
+
+12
+00:00:40,879 --> 00:00:46,559
+please note that ntp is critical for a
+successful harvester installation
+
+13
+00:00:47,039 --> 00:00:49,760
+after you verify the provide parameters
+
+14
+00:00:49,760 --> 00:00:53,520
+you are ready to install harvester
+
+15
+00:00:54,879 --> 00:00:59,800
+it will perform some automatic tasks
+
+16
+00:01:06,799 --> 00:01:13,840
+and after a few minutes
+your harvester installation
+will be ready

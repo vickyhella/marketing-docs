@@ -1,0 +1,328 @@
+﻿1
+00:00:08,480 --> 00:00:16,880
+hello everyone today we'll be showing you a very cool demo composed of rancher desktop
+
+2
+00:00:16,880 --> 00:00:19,840
+microsoft visual studio code
+
+3
+00:00:19,840 --> 00:00:25,199
+or real and nice bci container image
+
+4
+00:00:25,199 --> 00:00:30,560
+and a very cool remote containers from Microsoft
+
+5
+00:00:30,560 --> 00:00:33,760
+so get ready
+
+6
+00:00:33,760 --> 00:00:37,200
+let's start with rancher desktop
+
+7
+00:00:37,200 --> 00:00:46,000
+rancher desktop is a software that provides you with container management and Kubernetes on your desktop
+
+8
+00:00:46,000 --> 00:00:52,160
+run your desktop works on apple, windows and linux
+
+9
+00:00:52,160 --> 00:00:55,280
+why using rancher desktop because as i told you
+
+10
+00:00:55,280 --> 00:01:03,120
+it offers you container management so you can build push and pull your containers
+
+11
+00:01:03,120 --> 00:01:05,360
+you have a nice and easy way to interact with Kubernetes
+
+12
+00:01:05,360 --> 00:01:10,110
+you have your own local kubernetes environment
+
+13
+00:01:10,120 --> 00:01:15,119
+and it is built on projects like k3s qctl and more known projects
+
+14
+00:01:15,119 --> 00:01:21,680
+it will make the way you interact with kubernetes easy and simple
+
+15
+00:01:21,680 --> 00:01:24,320
+you'll see
+
+16
+00:01:24,640 --> 00:01:29,920
+now it's time to introduce SUSE container images
+
+17
+00:01:29,920 --> 00:01:37,360
+So our base container image or bci based and suse linux enterprise server 15.
+
+18
+00:01:37,360 --> 00:01:41,920
+this is a low footprint secure image
+
+19
+00:01:41,920 --> 00:01:46,479
+you can pull it with podman with docker whatever tool you want
+
+20
+00:01:46,479 --> 00:01:53,119
+it is supported on many different architectures as you can see here in the in the webpage
+
+21
+00:01:53,119 --> 00:01:56,719
+and it's definitely going to make your life easier
+
+22
+00:01:56,719 --> 00:01:59,840
+now the visual studio code remote containers extension
+
+23
+00:01:59,840 --> 00:02:07,759
+this is a very cool feature from visual studio code
+
+24
+00:02:07,759 --> 00:02:14,480
+this allows you to set up a docker container as a local development environment
+
+25
+00:02:14,480 --> 00:02:18,160
+so you can run the same environment wherever you need
+
+26
+00:02:18,160 --> 00:02:22,480
+so basically you connect your local environment with a container
+
+27
+00:02:22,480 --> 00:02:26,560
+and you share the code in that container and run it there
+
+28
+00:02:26,560 --> 00:02:35,040
+to do this we're going to use this chart made by Matt Farina our engineer
+
+29
+00:02:35,040 --> 00:02:41,120
+and afterwards we'll use this hello world application made in go
+
+30
+00:02:41,120 --> 00:02:47,760
+first of all let's deploy the application using the helm chart
+
+31
+00:02:47,760 --> 00:02:53,760
+so let's go to install with the chart we saw in the repo
+
+32
+00:02:53,760 --> 00:02:57,840
+so helm install name whatever you want
+
+33
+00:02:57,840 --> 00:03:01,920
+parameters and content of the chart
+
+34
+00:03:01,920 --> 00:03:05,440
+now we're going to forward the port so we can access the application
+
+35
+00:03:05,440 --> 00:03:10,480
+it's a hello world web application
+
+36
+00:03:10,480 --> 00:03:13,680
+so accessing the local port 8080
+
+37
+00:03:13,680 --> 00:03:16,879
+we'll see that says hello rancher desktop
+
+38
+00:03:16,879 --> 00:03:19,040
+that's okay
+
+39
+00:03:19,040 --> 00:03:26,560
+now let's going to move on to the real code of the application
+
+40
+00:03:26,560 --> 00:03:31,599
+so let's open code visual studio code from our repo
+
+41
+00:03:31,760 --> 00:03:40,239
+so just code the path and it opens we'll see that offers the option to run is a container
+
+42
+00:03:40,239 --> 00:03:43,200
+this is what i introduced you previously the remote container feature
+
+43
+00:03:43,200 --> 00:03:51,040
+so you can use a container as a development environment
+
+44
+00:03:51,040 --> 00:04:01,280
+so we just need to add this dev container folder that contains a json and a docker file that will be used
+
+45
+00:04:01,280 --> 00:04:05,840
+in the let's say development container we pop up
+
+46
+00:04:05,840 --> 00:04:10,959
+so here in the terminal we have the container we can do an ls
+
+47
+00:04:10,959 --> 00:04:13,519
+and now we're going to run our application
+
+48
+00:04:13,519 --> 00:04:17,199
+so it's a go application "go run" whatever
+
+49
+00:04:17,199 --> 00:04:19,440
+and it's going to start
+
+50
+00:04:19,440 --> 00:04:21,680
+and when it starts visual studio code
+
+51
+00:04:21,680 --> 00:04:31,120
+you will detect that is running on the background and offers you to open the browser so
+
+52
+00:04:31,120 --> 00:04:35,040
+easy simple and very nice
+
+53
+00:04:35,040 --> 00:04:38,000
+now let's change the application
+
+54
+00:04:38,000 --> 00:04:44,960
+we need for instance instead of saying hello rancher desktop
+
+55
+00:04:44,960 --> 00:04:46,560
+we need that it says hello world
+
+56
+00:04:46,560 --> 00:04:50,960
+so we're going to change it here directly
+
+57
+00:04:50,960 --> 00:04:52,880
+and we're going to run the container again
+
+58
+00:04:52,880 --> 00:04:56,639
+this time in the boot mode and 
+
+59
+00:04:56,639 --> 00:05:04,080
+you‘re gonna see that offers again to open the browser and now it says hello world
+
+60
+00:05:04,080 --> 00:05:06,560
+so it can't be easier
+
+61
+00:05:06,560 --> 00:05:16,800
+you can use that same container for any environment you use
+
+62
+00:05:16,800 --> 00:05:19,600
+but there's another docker file is outside that previous dev container folder
+
+63
+00:05:19,600 --> 00:05:22,400
+and this is a common docker file
+
+64
+00:05:22,400 --> 00:05:28,320
+that is going to run a scratch container with this very same application
+
+65
+00:05:28,320 --> 00:05:39,280
+and we are going to see the difference when we build an new image using that docker file
+
+66
+00:05:39,280 --> 00:05:44,880
+so we're building the version 2 0 2 0 we build the container
+
+67
+00:05:44,880 --> 00:05:47,440
+and now if we check the images
+
+68
+00:05:47,440 --> 00:05:49,840
+we're going to see something amazing
+
+69
+00:05:49,840 --> 00:05:56,639
+The visual studio code let's say development container is huge
+
+70
+00:05:56,639 --> 00:06:00,479
+why is huge because it needs a lot of libraries and stuff that is included there
+
+71
+00:06:00,479 --> 00:06:07,199
+however let's see our scratch container is just six MB
+
+72
+00:06:07,199 --> 00:06:11,759
+it's tiny it's very very very small
+
+73
+00:06:11,759 --> 00:06:17,680
+now what we're going to do is to update our helm chart
+
+74
+00:06:17,680 --> 00:06:20,000
+remember we deployed the helm chart
+
+75
+00:06:20,000 --> 00:06:22,960
+so we're going to deploy our helm chart with this new container we build
+
+76
+00:06:22,960 --> 00:06:27,840
+or with this image we built sorry
+
+77
+00:06:27,840 --> 00:06:31,039
+we're going to tag it with the proper tag
+
+78
+00:06:31,039 --> 00:06:35,120
+and we're going to see that the application runs again
+
+79
+00:06:35,120 --> 00:06:45,759
+and again it's the new application it will say again hello world instead of hello rancher desktop
+
+80
+00:06:45,759 --> 00:06:56,080
+so basically what i'm showing you here it's a very easy to have environments on different let's say
+
+81
+00:06:56,080 --> 00:07:01,440
+tools with different solutions to run and test your software
+
+82
+00:07:01,440 --> 00:07:07,400
+so that's all for today i hope you enjoy this demo
+

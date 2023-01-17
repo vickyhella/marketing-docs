@@ -1,0 +1,112 @@
+﻿1
+00:00:00,160 --> 00:00:02,560
+hi the courser here
+
+2
+00:00:02,560 --> 00:00:10,400
+i want to show how to add a disk to a running vm on harvester
+
+3
+00:00:10,400 --> 00:00:19,520
+this comes after a demo i did during the cube versus summit 2022 and during the demo i did one error
+
+4
+00:00:19,520 --> 00:00:25,039
+i went to the config here on volumes
+
+5
+00:00:25,039 --> 00:00:29,119
+and i tried to add an existing volume
+
+6
+00:00:29,119 --> 00:00:34,239
+then unchecked restart now and click save so
+
+7
+00:00:34,239 --> 00:00:38,480
+if i do it actually just to show you what is the error
+
+8
+00:00:38,480 --> 00:00:42,480
+here i will pick my cuber submit disk
+
+9
+00:00:42,480 --> 00:00:45,200
+and everything else is set up for me
+
+10
+00:00:45,200 --> 00:00:48,719
+and then when i will click save it gave me the error
+
+11
+00:00:48,719 --> 00:00:52,640
+and i thought it was like the demo gods against me well
+
+12
+00:00:52,640 --> 00:01:01,039
+no what i did wrong is that i need to add a volume directly from the menu here
+
+13
+00:01:01,039 --> 00:01:09,600
+where i will call it cube vert summit disk for example
+
+14
+00:01:09,600 --> 00:01:14,000
+and then i will pick up my disk that is unassigned
+
+15
+00:01:14,000 --> 00:01:15,680
+I will click apply
+
+16
+00:01:15,680 --> 00:01:21,759
+and if i go to the volumes now i can see that it's attached to the vm
+
+17
+00:01:21,759 --> 00:01:24,240
+so back to the vm now
+
+18
+00:01:24,240 --> 00:01:30,000
+what we will see here for now is i don't have the disk so
+
+19
+00:01:30,000 --> 00:01:37,520
+if i refresh the settings here now it sees the disk
+
+20
+00:01:37,520 --> 00:01:44,479
+and if i go to the disk manager and i refresh also
+
+21
+00:01:44,479 --> 00:01:50,320
+i will have a new disk appearing in few seconds
+
+22
+00:01:50,320 --> 00:01:52,799
+and actually it's here sorry
+
+23
+00:01:52,799 --> 00:02:00,399
+and here i can see my 10 gigabit uh disk so
+
+24
+00:02:00,399 --> 00:02:04,000
+if i put it online
+
+25
+00:02:04,479 --> 00:02:10,720
+i initialized it with gpt
+
+26
+00:02:10,959 --> 00:02:16,800
+and finally i can create a volume out of it with the full space
+
+27
+00:02:16,800 --> 00:02:19,760
+i will just keep the defaults for the demo
+
+28
+00:02:19,760 --> 00:02:27,360
+and now we can see the disk so here it is how to add odd plug volume
+
