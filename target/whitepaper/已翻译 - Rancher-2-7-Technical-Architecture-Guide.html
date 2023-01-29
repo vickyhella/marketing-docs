@@ -172,8 +172,7 @@
 </blockquote>
 <ol type="1">
 <li><p><a href="#背景">背景 3</a></p></li>
-<li><p><a
-href="#rancher-2.7专为企业生产级别的-kubernetes-而打造">Rancher
+<li><p><a href="#rancher-2.7专为企业生产级-kubernetes-而设">Rancher
 2.7：专为企业生产级别的 Kubernetes 而打造 4</a></p>
 <ol type="1">
 <li><p><a href="#经过认证的-kubernetes-发行版">经过认证的 Kubernetes
@@ -195,7 +194,7 @@ href="#rancher-2.7专为企业生产级别的-kubernetes-而打造">Rancher
 <ol start="2" type="1">
 <li><p><a href="#management-controller">Management Controller
 13</a></p></li>
-<li><p><a href="#用户-cluster-controller">用户 Cluster Controller
+<li><p><a href="#user-cluster-controller">User Cluster Controller
 13</a></p></li>
 <li><p><a href="#身份验证代理">身份验证代理 14</a></p></li>
 <li><p><a href="#fleet-manager">Fleet Manager 15</a></p></li>
@@ -203,8 +202,8 @@ href="#rancher-2.7专为企业生产级别的-kubernetes-而打造">Rancher
 <ol start="5" type="1">
 <li><p><a href="#rancher-agent-组件">Rancher Agent 组件 15</a></p>
 <ol type="1">
-<li><p><a href="#cluster-agents">Cluster Agents 15</a></p></li>
-<li><p><a href="#node-agents">Node Agents 15</a></p></li>
+<li><p><a href="#cluster-agent">Cluster Agent 15</a></p></li>
+<li><p><a href="#node-agent">Node Agent 15</a></p></li>
 <li><p><a href="#fleet-agent">Fleet Agent 15</a></p></li>
 </ol></li>
 <li><p><a href="#升级">升级 16</a></p></li>
@@ -215,14 +214,14 @@ href="#rancher-2.7专为企业生产级别的-kubernetes-而打造">Rancher
 <h1 id="背景">背景</h1>
 <blockquote>
 <p>在 COVID 之前，许多组织开始使用 Kubernetes
-作为数字化转型的一部分，体验编排平台提供的速度、灵活性和稳定性。然而，随着全球大流行病的爆发，组织被迫加速采用容器和云原生技术，从而满足不断变化的市场需求。2022
+作为数字化转型的一部分，体验编排平台提供的速度、灵活性和稳定性。然而，随着全球大流行病的爆发，组织被迫加速采用容器和云原生技术来满足不断变化的市场需求。2022
 年 2 月发布的年度 CNCF（云原生计算基金会）调查表示，96%
 的组织已使用或正在评估 Kubernetes。</p>
 <p>但是，负责实现 Kubernetes
 的团队会面临着复杂的挑战，其中包括日益分散的基础设施环境以及难以雇用支持系统的
 Kubernetes
 人才。更复杂的是，随着基于容器的生态系统的发展，越来越多的组织进行了多云部署，显著增加了数据中心的攻击面，因此现在需要更加注重
-Kubernetes 工作负载的安全性、合规性实施和监控。</p>
+Kubernetes 工作负载的安全性、合规性和监控。</p>
 <p>然而，Kubernetes 仍然为企业提供了多种好处，包括：</p>
 </blockquote>
 <ul>
@@ -258,18 +257,18 @@ Agent、Gatekeeper、Kubewarden 和 NeuVector 集成。</strong></p></li>
 </ul>
 <blockquote>
 <p>Rancher 大规模简化了 Kubernetes
-管理及其相关操作。它有助于提高自动化和配置管理，同时通过使用不同的开源项目和工具执行和保护你的集群。Rancher
-帮助你的运营团队消除重复和繁琐任务的负担，同时为开发人员提供更多自由来构建和发布他们的应用程序。</p>
+管理及其相关操作。它有助于提高自动化和配置管理，同时使用不同的开源项目和工具来实施和保护你的集群。Rancher
+帮助你的运营团队消除重复和繁琐任务的负担，同时为开发人员提供更多自由来构建和发布应用程序。</p>
 </blockquote>
-<h1 id="rancher-2.7专为企业生产级别的-kubernetes-而打造">Rancher
-2.7：专为企业生产级别的 Kubernetes 而打造</h1>
+<h1 id="rancher-2.7专为企业生产级-kubernetes-而设">Rancher
+2.7：专为企业生产级 Kubernetes 而设</h1>
 <blockquote>
 <p>Rancher 2.7 是一个基于 Kubernetes 构建的完整容器管理平台。如图 1
 所示，Rancher 2.7 由四个主要组件组成：经过认证的 Kubernetes 发行版（包括
-SUSE 的 RKE/RKE2 和 CNCF
-沙盒项目，K3s）、一致的集群操作、安全/身份验证/策略管理，以及开发人员平台服务。</p>
+SUSE 的 RKE/RKE2 和 CNCF 沙盒项目
+K3s）、一致的集群操作、安全/身份验证/策略管理，以及开发人员平台服务。</p>
 </blockquote>
-<p><img src="media/image2.jpeg"
+<p><img src="./media/image2.jpeg"
 style="width:6.03472in;height:2.96528in" /></p>
 <blockquote>
 <p>图 1：Rancher 大规模管理生产就绪 Kubernetes 的方式概述</p>
@@ -291,10 +290,10 @@ https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RGS_RKE2_V1R1_STIG.zip
 https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RGS_MCM_V1R2_STIG.zip</p>
 <p>Kubernetes 服务。此外，许多人在已经支持 Kubernetes
 服务的云提供商中使用 RKE，以便在任何地方都能实现一致的 Kubernetes。在
-Rancher 中，集群配置到 Linux x86_64 和 Arm64 架构以及 Windows
+Rancher 中，集群可以配置到 Linux x86_64 和 Arm64 架构以及 Windows
 系统上。</p>
 <p>Rancher 中的 RKE 管理 Kubernetes
-集群从初始安装到持续维护的整个生命周期。Rancher 用户可以：</p>
+集群从初始安装到维护的整个生命周期。Rancher 用户可以：</p>
 </blockquote>
 <ol type="a">
 <li><p>使用主机驱动程序在许多云环境上自动配置 VM 实例。</p></li>
@@ -306,7 +305,7 @@ Rancher 中，集群配置到 Linux x86_64 和 Arm64 架构以及 Windows
 <li><p>监控 Kubernetes 集群的健康状况。</p></li>
 </ol>
 <blockquote>
-<p>有关 RKE 的更多信息，请访问 http://www.rancher.com/products/rke</p>
+<p>有关 RKE 的更多信息，请访问 http://www.rancher.com/products/rke。</p>
 </blockquote>
 <h3 id="rancher-kubernetes-engine-2-rke2">Rancher Kubernetes Engine 2
 (RKE2)</h3>
@@ -323,7 +322,7 @@ DISA STIG 认证的 Kubernetes 发行版。</p>
 部署时，RKE2 集群将默认使用开源的 Calico 容器网络接口 (CNI)
 插件，以及通过 Multus 将多个网络接口部署到它们的 pod 中的选项。有了
 RKE2，用户能够在自定义集群中配置 Windows 节点。</p>
-<p>有关 RKE2 的更多信息，请访问 https://docs.rke2.io/</p>
+<p>有关 RKE2 的更多信息，请访问 https://docs.rke2.io/。</p>
 </blockquote>
 <h3
 id="k3s为物联网和边缘构建的轻量级-kubernetes-发行版">K3s：为物联网和边缘构建的轻量级
@@ -341,17 +340,17 @@ Server 和 Agent 模型。K3s
 <p>除了核心 Kubernetes 组件外，我们还运行了
 containerd、Flannel、CoreDNS、Ingress Controller
 和一个简单的基于主机端口的 Service Load
-Balancer。这些组件都是可选的，你可以根据你的实现方式进行更换。有了这些包含的组件，你将获得一个功能齐全且符合
+Balancer。这些组件都是可选的，你可以根据你的实现方式进行更换。有了这些组件，你将获得一个功能齐全且符合
 CNCF 标准的集群，因此你可以立即开始运行应用程序。K3s 现在是一个 CNCF
 沙箱项目，是第一个被沙箱采用的 Kubernetes 发行版。</p>
 <p>Rancher 2.7 发布后，跨 x86 平台部署 K3s 已 GA。</p>
-<p>有关 K3s 的更多信息，请访问 https://k3s.io</p>
+<p>有关 K3s 的更多信息，请访问 https://k3s.io。</p>
 </blockquote>
 <h2 id="一致的集群操作">一致的集群操作</h2>
 <blockquote>
-<p>使用 Rancher，你可以管理使用现有工具配置的 Kubernetes
-集群或使用由云管理的 Kubernetes 集群。你可以轻松地在 Rancher
-安装中配置，导入或管理 EKS（Elastic Kubernetes Service）、GKE 和 AKS 等
+<p>有了 Rancher，你可以管理使用现有工具配置的 Kubernetes
+集群或使用云上的 Kubernetes 集群。你可以轻松在 Rancher
+中配置、导入或管理 EKS（Elastic Kubernetes Service）、GKE 和 AKS 等
 Kubernetes 服务。Rancher
 是市场上唯一支持跨这三个公共托管平台进行完整生命周期管理的解决方案。此外，你可以在任何云、虚拟平台或裸机基础设施上配置和运行
 RKE/RKE2 以及 K3s 集群。</p>
@@ -362,8 +361,8 @@ Git 中，并使用适合你组织需求的任何策略。</p>
 </blockquote>
 <h3 id="fleet">Fleet</h3>
 <blockquote>
-<p>Fleet 是由 SUSE Rancher 团队开发的开源项目。它解决了基于 GitOps
-的应用程序交付和大规模集群配置管理的挑战。虽然是为大规模使用而设计的，但它仍然适用于少于
+<p>Fleet 是由 SUSE Rancher 团队开发的开源项目，它解决了基于 GitOps
+的应用程序交付和大规模集群配置管理的挑战。虽然是为大规模使用而设计的，但它也适用于少于
 10 个集群的小型部署。</p>
 <p>Fleet
 非常轻量，可以在最小的部署上运行，甚至在单节点集群中也有优势。Fleet
@@ -382,7 +381,7 @@ Kubernetes Secret 提供（Repo Structure 文档的 Private Helm Repo
 Manager 版本对其 UI
 功能进行更改和增强。使用扩展应用商店，管理员可以查看已安装的扩展，更新或回滚</p>
 <p>现有扩展，并根据需要安装新的扩展。有了扩展，操作人员可以扩展 Rancher
-的 UI 和功能。有关如何使用 Rancher 扩展的更多信息，请参阅文档。</p>
+的 UI 和功能。有关如何使用 Rancher 扩展的更多信息，请参阅相关文档。</p>
 <p>集群事件现已移至更显着的位置，因此用户能更容易查看集群中发生的事件。此外，诊断页面现在能更详细地显示性能相关故障排除信息。管理员还可以从
 Rancher UI 中添加文档的链接。</p>
 </blockquote>
@@ -393,15 +392,14 @@ Rancher UI 中添加文档的链接。</p>
 Rancher、SLE Micro 和 SUSE
 NeuVector，它带来了一个集成平台，可以跨分布式边缘位置简化、集中和自动化
 Kubernetes 和 Linux OS 生命周期管理。</p>
-<p><img src="media/image3.png"
+<p><img src="./media/image3.png"
 style="width:6.11667in;height:3.15764in" /></p>
 <p>图 2：Rancher + Elemental EDGE 堆栈</p>
 </blockquote>
 <h2 id="身份验证和用户管理">身份验证和用户管理</h2>
 <blockquote>
-<p>Rancher 管理员可以与他们的安全团队合作，集中定义用户应如何与
-Kubernetes
-交互，以及容器化工作负载应如何在其所有基础架构中运行，包括托管云提供商（如
+<p>Rancher 管理员可以与安全团队合作，从而集中定义用户与 Kubernetes
+交互的方式，以及容器化工作负载应如何在所有基础架构中运行，包括托管云提供商（如
 AKS、EKS 和
 GKE）中的托管集群。定义了统一策略后，你可以立即将它们分配给任何
 Kubernetes 集群。</p>
@@ -416,12 +414,12 @@ Protocol）、SAML、GitHub 等。以这种方式连接时，Rancher
 <p>身份验证延展到 Rancher 保护的所有 Kubernetes
 集群，无论它们在哪里运行。</p>
 </blockquote>
-<p><img src="media/image4.jpeg"
+<p><img src="./media/image4.jpeg"
 style="width:6.13333in;height:2.51806in" /></p>
 <blockquote>
 <p>Rancher
 在全局、集群和项目级别启用角色，因此管理员可以在一个地方定义角色并将它们应用到所有集群。</p>
-<p>默认结合 RBAC 和对身份验证和授权的强大控制，意味着从你使用 Rancher
+<p>结合默认的 RBAC 和对身份验证和授权的强大控制，意味着从你使用 Rancher
 部署或导入集群的那一刻起，该集群就是安全的。</p>
 </blockquote>
 <h2 id="共享工具和服务">共享工具和服务</h2>
@@ -435,7 +433,7 @@ Kubernetes 资源提供了简洁的 UI。</p>
 通过公开正确的变量集并指导用户完成整个过程来简化 Helm Chart
 部署。Rancher
 应用商店会提出正确的问题并提供合理的默认值和多项选择值。Rancher 支持
-Helm 3 应用商店以及基于 git 的应用仓库。</p>
+Helm 3 应用商店以及基于 Git 的应用仓库。</p>
 <p>Rancher 适用于任何与 Kubernetes 集成的 CI/CD
 系统。例如，Jenkins、Drone 和 GitLab 将继续与 Rancher
 合作，就像他们与其他 Kubernetes 发行版合作一样。如果 CI/CD
@@ -455,8 +453,8 @@ Server，是市场上最安全的操作系统之一，因此部署 SLE BCI-Micro
 <blockquote>
 <p>容器环境中的安全事故越来越普遍，错误配置现在是 Kubernetes
 环境最主要的安全漏洞。</p>
-<p>拥有正确的工具来确保集群和平台具有正确的设置非常重要。使用准入控制器和受监管的策略（CIS
-推荐做法）来避免错误部署了配置有问题的容器是组织的一个高度优先事项。</p>
+<p>使用正确的工具来确保集群和平台具有正确的设置非常重要。使用准入控制器和受监管的策略（CIS
+推荐做法）来避免部署配置错误的容器是组织需要高度优先的事项。</p>
 <p>Rancher 的安全功能不仅限于处理错误配置。Rancher
 包含了用于解决漏洞并帮助操作人员管理风险的功能，包括：</p>
 </blockquote>
@@ -464,7 +462,7 @@ Server，是市场上最安全的操作系统之一，因此部署 SLE BCI-Micro
 <li><p>审计日志中添加了“用户 ID 跟踪”，用于帮助用户跟踪事件。Rancher
 现在在 Rancher 和 Kubernetes 审计日志中包含了 Identity Provider
 名称。这提升了 Rancher
-的自助服务模型，能让用户清楚地识别集群的所有者。</p></li>
+的自助服务模型，让用户能清楚地识别集群的所有者。</p></li>
 <li><p>CVE
 的“镜像扫描”现在是版本发布的一部分，会在所有镜像中自动执行，帮助用户轻松确定集群中的镜像是否存在重大漏洞。如果发现任何严重漏洞，Rancher
 会采取预先确定的措施来识别、修复和缓解问题。</p></li>
@@ -474,7 +472,7 @@ CVE 和错误配置。</p></li>
 <li><p>“集群模板”允许操作人员在集群部署中创建、保存和复用经过良好测试的
 Kubernetes 配置。这些模板使用了 CIS 最新 Kubernetes Benchmark
 的管控和最佳实践。集群模板功能还包括一个策略执行选项，它可以防止配置偏移，并确保你部署的集群在扩展时不会意外引入安全漏洞。</p></li>
-<li><p>有了“CIS 扫描”，安全和运营团队能够通过将集群设置与 CIS Kubernetes
+<li><p>有了“CIS 扫描”，安全和运营团队能够将集群设置与 CIS Kubernetes
 Benchmark 中的最佳实践指南进行比较，从而自动识别配置错误。Rancher
 在集群上运行 CIS
 安全扫描时会生成一份报告，该报告会显示每个测试的结果，包括测试概要以及
@@ -519,18 +517,18 @@ Rancher Prime 的更多信息。</p></li>
 </ul>
 <blockquote>
 <p>Bundle 在 Fleet Controller 中定义，然后使用 Controller
-以及定制配置部署到目标集群。虽然你可以使用强大的选择器将 Bundle
+以及定制配置部署到目标集群。虽然可以通过强大的选择器将 Bundle
 部署到任何集群，但每个集群都是一个集群组的成员。通过查看 Bundle
 和集群组的状态，你可以快速了解大型部署的状态。部署 Bundle 后，Bundle
 将被持续监控以确保它是就绪状态，并且资源未被修改。</p>
-<p>Bundle 可以是纯 Kubernetes YAML、Helm 或基于 kustomize 的。Helm 和
-kustomize 也可以结合起来创建强大的工作流。无论你选择哪种方法来创建
+<p>Bundle 可以是纯 Kubernetes YAML、Helm 或基于 Kustomize 的。Helm 和
+Kustomize 也可以结合起来创建强大的工作流。无论你选择哪种方法来创建
 Bundle，所有资源都将作为 Helm Chart 部署到集群中。使用 Fleet
 管理集群意味着你的所有集群都可以轻松审计，这是因为每个资源都在 Chart
 中管理，你只要简单运行 helm -n fleet-system ls
 就能查看已安装内容的准确概览。通过结合 Fleet 与基于 Git 的工作流（如
 GitHub Actions），你可以轻松实现大规模自动化。</p>
-<p><img src="media/image5.png"
+<p><img src="./media/image5.png"
 style="width:4.94861in;height:3.95625in" /></p>
 <p>图 3：Fleet 上层架构</p>
 </blockquote>
@@ -539,9 +537,9 @@ style="width:4.94861in;height:3.95625in" /></p>
 <p>Rancher 拥有管理整个 Rancher Deployment 的 Server 组件，并将 Agent
 组件部署到 Kubernetes 集群中。</p>
 <p>图说明了 Rancher 的上层架构。在该图中，Rancher Server 管理两个
-Kubernetes 集群的，分别是由 RKE 创建的 Kubernetes 集群和非 RKE
-Kubernetes 集群，可以是 EKS、AKS、GKE 或任何其他 Kubernetes 集群。</p>
-<p><img src="media/image6.png"
+Kubernetes 集群，分别是由 RKE 创建的 Kubernetes 集群和非 RKE Kubernetes
+集群，可以是 EKS、AKS、GKE 或任何其他 Kubernetes 集群。</p>
+<p><img src="./media/image6.png"
 style="width:6.54861in;height:6.49514in" /></p>
 <p>图 4：Rancher 上层架构</p>
 </blockquote>
@@ -586,12 +584,12 @@ GKE）来配置集群。</p></li>
 <li><p>管理主机驱动、节点模板和节点池。</p></li>
 <li><p>在删除 Rancher 中的集群时管理集群清理。</p>
 <ol type="1">
-<li><h2 id="用户-cluster-controller">用户 Cluster Controller</h2></li>
+<li><h2 id="user-cluster-controller">User Cluster Controller</h2></li>
 </ol></li>
 </ol>
 <blockquote>
-<p>用户 Cluster Controller 执行特定于集群的活动。用户 Cluster Controller
-分布在正在运行的 Rancher Server pod
+<p>User Cluster Controller 执行特定于集群的活动。User Cluster Controller
+分布在正在运行的 Rancher Server Pod
 中，用于进行水平扩展。这些活动包括：</p>
 </blockquote>
 <ol type="a">
@@ -605,7 +603,7 @@ Server，包括事件、统计信息、节点信息和健康状况。</p></li>
 <li><p>将 Secret 从 Rancher Server 向下传播到各个集群。</p></li>
 </ol>
 <blockquote>
-<p>用户 Cluster Controller 直接连接到 GKE 集群中的 API Server，但通过
+<p>User Cluster Controller 直接连接到 GKE 集群中的 API Server，但通过
 Cluster Agent 连接到 RKE 集群中的 API Server。</p>
 </blockquote>
 <h2 id="身份验证代理">身份验证代理</h2>
@@ -615,16 +613,16 @@ Cluster Agent 连接到 RKE 集群中的 API Server。</p>
 GitHub。身份验证代理将所有 Kubernetes API
 调用转发到下游集群。它集成了本地身份验证、Active Directory 和 GitHub
 等身份验证方式。在每个 Kubernetes API
-调用请求时，身份验证代理会验证请求方的身份，并在转发给 Kubernetes master
-节点之前，设置正确的 Kubernetes 消息头。</p>
+调用请求时，身份验证代理会验证请求方的身份，并在将调用转发给 Kubernetes
+master 节点之前设置正确的 Kubernetes 消息头。</p>
 <p>Rancher 使用 ServiceAccount 与 Kubernetes 集群通信，该 ServiceAccount
 为在 Pod 中运行的进程提供身份。</p>
 <p>基于 RKE
-的集群引入了身份验证集群端点，让本地集群能进行集中式身份验证。这通过从身份验证路径中删除
+的集群引入了身份验证集群端点，让本地集群能进行集中式身份验证。这通过在身份验证路径中删除
 Rancher Server 来提高可用性，允许在断开连接时管理和操作 Kubernetes
 集群。</p>
 </blockquote>
-<p><img src="media/image7.jpeg"
+<p><img src="./media/image7.jpeg"
 style="width:4.43403in;height:4.64514in" /></p>
 <blockquote>
 <p>图 5：Rancher 2.7 身份验证代理通信图</p>
@@ -632,7 +630,7 @@ style="width:4.43403in;height:4.64514in" /></p>
 <h2 id="fleet-manager">Fleet Manager</h2>
 <blockquote>
 <p>Fleet Manager 负责从 Git 仓库中提取包和定义。每个 Rancher Server
-安装只有一个 Fleet Manager。</p>
+安装中只有一个 Fleet Manager。</p>
 <p>Fleet Manager 能满足 Fleet Agent 的请求。</p>
 </blockquote>
 <h1 id="rancher-agent-组件">Rancher Agent 组件</h1>
@@ -640,10 +638,10 @@ style="width:4.43403in;height:4.64514in" /></p>
 <p>在本节中，我们将描述部署在由 Rancher 管理的 Kubernetes
 集群中的软件组件。</p>
 </blockquote>
-<h2 id="cluster-agents">Cluster Agents</h2>
+<h2 id="cluster-agent">Cluster Agent</h2>
 <blockquote>
 <p>Rancher 为每个管理的 Kubernetes 集群部署一个 Cluster Agent。Cluster
-Agent 打开一个返回 Rancher Server 的 WebSocket 隧道，以便用户 Cluster
+Agent 打开一个返回 Rancher Server 的 WebSocket 隧道，以便 User Cluster
 Controller 和身份验证代理可以与用户集群 Kubernetes API Server
 通信。请注意，只有 RKE 集群和导入的集群使用 Cluster Agent 来连接
 Kubernetes API。像 GKE 这样的云上 Kubernetes
@@ -658,7 +656,7 @@ Kubernetes API。像 GKE 这样的云上 Kubernetes
 <li><p>在注册期间，Cluster Agent 从 Kubernetes 集群获取 ServiceAccount
 凭证并将 ServiceAccount 凭证发送到 Rancher Server。</p>
 <ol type="1">
-<li><h2 id="node-agents">Node Agents</h2></li>
+<li><h2 id="node-agent">Node Agent</h2></li>
 </ol></li>
 </ol>
 <blockquote>
@@ -667,7 +665,7 @@ Kubernetes API。像 GKE 这样的云上 Kubernetes
 为所有集群提供了几个附加功能：</p>
 </blockquote>
 <ol type="a">
-<li><p>Cluster Agent 的回退。如果 Cluster Agent 不可用，Rancher Server
+<li><p>Cluster Agent 的备选。如果 Cluster Agent 不可用，Rancher Server
 将使用 Node Agent 连接到 Kubernetes API Server。</p></li>
 <li><p>kubectl shell 的代理。Rancher Server 通过 Node Agent 连接，在 UI
 中隧道化 kubectl shell。Node Agent 比 Cluster Agent
@@ -680,7 +678,7 @@ Kubernetes API。像 GKE 这样的云上 Kubernetes
 <p>Fleet Agent 调用 Fleet Manager 并将它的详情提取为
 BundleDeployment。</p>
 <p>Fleet Agent 不需要与 Fleet Manager 保持持续连接。下次连接时，Agent
-会与 Manager 协调，因此非常适合网络连接不一致的情况。</p>
+会与 Manager 协调，因此非常适合网络连接不一致的场景。</p>
 </blockquote>
 <h1 id="升级">升级</h1>
 <blockquote>
@@ -694,10 +692,10 @@ Agent。然后，用户可以升级 RKE 和 K3s 集群的底层 Kubernetes
 <p>用户可以使用专用的 RKE/RKE2/K3s 集群来运行 Rancher
 Server。例如，标准的 Rancher 安装指南创建了一个包含 3
 个节点的集群部署，每个节点运行了一个 API Server 和 etcd
-数据库实例。Rancher Server 会自动导入运行它的 Kubernetes 集群。这就是为
-“local集群”。Rancher 会使用 Kubernetes API 并间接使用该集群 etcd
-作为主要数据存储。</p>
-<p>有关 Rancher 2.7 安装的信息，请参阅此处。</p>
+数据库实例。Rancher Server 会自动导入运行它的 Kubernetes
+集群，这就是“local 集群”。Rancher 会使用 Kubernetes API 并间接使用该集群
+etcd 作为主要数据存储。</p>
+<p>有关 Rancher 2.7 安装的信息，请参阅文档。</p>
 </blockquote>
 <h1 id="关于-suse">关于 SUSE</h1>
 <blockquote>
@@ -733,16 +731,16 @@ CNCF 的“孵化”项目。</strong></p></li>
 <blockquote>
 <p>收购后，Rancher
 的所有产品和项目都保持开源，并得到了活跃的社区的支持。SUSE
-为某些解决方案提供企业支持订阅，这些解决方案使用 “Rancher Prime”
-进行区分。</p>
+为一些解决方案提供了企业支持订阅，我们使用“Rancher
+Prime”来区分这些解决方案。</p>
 <p>这些产品共同帮助 IT 人员、DevOps
 和技术团队应对跨任何基础设施管理经认证的 Kubernetes
 集群的运营和安全挑战。他们还为开发人员提供了一个集成的工具栈，用于大规模构建和运行容器化工作负载。</p>
-<p>要了解有关 Rancher 的更多信息，请访问：www.rancher.com</p>
+<p>要了解有关 Rancher 的更多信息，请访问 www.rancher.com。</p>
 </blockquote>
 <h1 id="支持矩阵">支持矩阵</h1>
 <blockquote>
-<p>有关 Rancher Prime 订阅的最新支持功能，请查看我们的支持矩阵。</p>
+<p>有关 Rancher Prime 订阅的最新支持功能，请查看我们的支持矩阵：</p>
 <p><a
 href="http://www.suse.com/suse-rancher/support-matrix/all-supported-versions/"><u>www.suse.com/suse-rancher/support-matrix/all-supported-versions/</u></a></p>
 </blockquote>
