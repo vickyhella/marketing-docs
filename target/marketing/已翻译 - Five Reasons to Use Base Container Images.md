@@ -1,6 +1,6 @@
 # 使用 BCI 的五个理由
 
-现在，软件开发的范例是将容器化应用程序部署到 Pod 上，然后让 Kubernetes 进行管理。Kubernetes 可以管理应用程序的部署、复制、HA、指标和其他功能，以便应用程序能专注于执行主要功能。该技术广泛用于全球各地的项目和客户。
+现在，软件开发的范例是将容器化应用程序部署到 Pod 上，然后让 Kubernetes 进行管理。Kubernetes 可以管理应用程序的部署、复制、HA、指标和其他功能，这样应用程序就可以专注于做它被设计的事情。
 
 要容器化应用程序，你需要使用镜像，而镜像通常是基于语言的（Golang、Python、Rust、.NET 等）。镜像提供商有很多，包括将镜像提交到镜像仓库的个人贡献者，以及企业级镜像提供商等。你也可以在开发中使用基于操作系统的镜像。
 
@@ -27,7 +27,7 @@ BCI 能帮助你解决以下问题：
 
 没有人愿意使用受 CVE 影响的软件来构建应用程序。作为开发人员，使用安全镜像可以确保开发的应用程序是可靠的。以下是一些例子：
 
-[Trivy](https://github.com/aquasecurity/trivy) 是一款镜像扫描软件，可用于检查漏洞。
+Trivy 是一款镜像扫描软件，可用于检查漏洞。
 
 ```
 ➜  ~ trivy image registry.suse.com/bci/bci-base
@@ -47,8 +47,6 @@ registry.suse.com/bci/bci-base (suse linux enterprise server 15.4)
 Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 ```
 
-**bci-base** 扫描结果
-
 bci-micro、bci-minimal、buxybox 和 init 上的结果也是一样的。
 
 ```
@@ -61,8 +59,6 @@ registry.suse.com/bci/bci-micro (SUSE Linux enterprise server 15.4)
 
 Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 ```
-
-**bci-micro, bci-init, bci-buxybox** 扫描结果
 
 这可以通过维护镜像的生命周期来实现，从而确保对 [CVE Mitre 数据库](https://cve.mitre.org/)中发布的每个新漏洞做出反应。
 
