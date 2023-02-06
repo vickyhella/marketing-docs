@@ -60,7 +60,7 @@ registry.suse.com/bci/bci-micro (SUSE Linux enterprise server 15.4)
 Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 ```
 
-这可以通过维护镜像的生命周期来实现，从而确保对 [CVE Mitre 数据库](https://cve.mitre.org/)中发布的每个新漏洞做出反应。
+这可以通过维护镜像的生命周期来实现，从而确保对 CVE Mitre 数据库 (https://cve.mitre.org/) 中发布的每个新漏洞做出反应。
 
 ### 重新分发
 
@@ -92,14 +92,14 @@ BCI 还为使用特定语言编写的应用程序提供基于语言的镜像，�
 
 ### 支持和生命周期
 
-SUSE 设计了 ​​BCI，而镜像通过企业级、ISV 和 IHV 的订阅获得商业支持。支持矩阵涵盖了 BCI 和语言包的基础，你可以在 [BCI 镜像仓库](https://registry.suse.com/)查看支持详情。
+SUSE 设计了 ​​BCI，而镜像通过企业级、ISV 和 IHV 的订阅获得商业支持。支持矩阵涵盖了 BCI 和语言包的基础，你可以在 BCI 镜像仓库 (https://registry.suse.com/) 查看支持详情。
 
 BCI 也是一个开源项目，你可以查看它的实际开发状态，了解它们是如何针对不同架构进行构建的，以及查看其他相关信息。
 
 这些镜像使用了 Open Build Service (OBS)，每个人都可以使用 OBS。
 
-- [SLE 15 SP4 的 BCI 开发项目](https://build.opensuse.org/project/show/devel:BCI:SLE-15-SP4)
-- [SLE 15 SP3 的 BCI 开发项目](https://build.opensuse.org/project/show/devel:BCI:SLE-15-SP3)
+- SLE 15 SP4 的 BCI 开发项目：https://build.opensuse.org/project/show/devel:BCI:SLE-15-SP4
+- SLE 15 SP3 的 BCI 开发项目：https://build.opensuse.org/project/show/devel:BCI:SLE-15-SP3
 
 ### 结论
 
@@ -115,8 +115,8 @@ BCI 提供了一个灵活的容器镜像生态系统，而且尽可能地减少�
 
 如需了解更多信息，请查看以下资源：
 
-[BCI 文档](https://documentation.suse.com/smart/linux/html/concept-bci-get-started/index.html)
+BCI 文档：https://documentation.suse.com/smart/linux/html/concept-bci-get-started/index.html
 
-[常见问题](https://www.suse.com/products/base-container-images/FAQ/)
+常见问题：https://www.suse.com/products/base-container-images/FAQ/
 
-[SUSE 容器镜像](https://registry.suse.com)
+SUSE 容器镜像：https://registry.suse.com
