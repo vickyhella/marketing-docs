@@ -28,7 +28,7 @@ These security tools are themselves pretty complex and deserve a dedicated artic
 
 ## Can [STIG hardening guide](https://www.suse.com/c/applying-disa-stig-hardening-to-sles-installations/) help me protect my Linux server from a Ransomware attack?
 
-The Security Technical Implementation Guides (STIGs) are a set of guidelines and procedures for securing information systems and networks. Developed by the U.S. Defense Information Systems Agency (DISA), they outline the requirements for systems when connected to a U.S. Department of Defense network. Working closely with DISA, SUSE has developed an implementation guide for SLES 15.
+The Security Technical Implementation Guides (STIGs) are a set of guidelines and procedures for securing information systems and networks.
 
 Needless to say, [STIG guidelines](https://public.cyber.mil/stigs/) are useful to anybody looking to harden a Linux server and make it less vulnerable to attacks, including ransomware.
 
@@ -42,8 +42,6 @@ The STIGs provide a detailed list of security settings and configuration options
 
 - Disabling unnecessary services and daemons
 
-- Restricting access to the server to only authorized users and hosts
-
 - Enabling logging and monitoring of system events
 
 - Enabling regular software updates
@@ -52,7 +50,7 @@ The STIGs provide a detailed list of security settings and configuration options
 
 Implementing these guidelines can help to reduce the attack surface of a Linux server and make it less vulnerable to common attack vectors, including ransomware.
 
-SUSE provides ways to apply part of this rules automatically for more detailed information I recommend to read Marcus’s blog post “[Applying DISA STIG hardening to SLES installations](https://www.suse.com/c/applying-disa-stig-hardening-to-sles-installations/)&#8220;.
+SUSE provides ways to apply part of this rules automatically. For more detailed information, I recommend to read Marcus’s blog post [Applying DISA STIG hardening to SLES installations](https://www.suse.com/c/applying-disa-stig-hardening-to-sles-installations/).
 
 ## How can I apply a STIG profiles to all my servers with openSCAP and SUSE Manager?
 
