@@ -22,8 +22,6 @@ This means it can identify attacks carried over the application layer, thanks to
 
 - **Limit application privileges.** We can further prevent ransomware attacks by using [Kubernetes security mechanisms](https://kubernetes.io/docs/concepts/security/), such as [Seccomp](https://lwn.net/Articles/656307/), AppArmor and SELinux. As previously discussed in this series, SELinux and AppArmor can be effective in preventing applications from accessing certain files or running certain processes. These are available only on Kubernetes nodes running on top of Linux distributions which have these features enabled, such as [SLES](https://documentation.suse.com/sles/html/SLES-all/cha-selinux.html) and [SLEmicro](https://documentation.suse.com/en-us/sle-micro/html/SLE-Micro-all/cha-selinux-slemicro.html).
 
-These powerful tools are worth a dedicated article in their own right.
-
 ## Why use [Zero-Trust](https://www.suse.com/campaigns/zero-trust/) policies to stop the spread of malware?
 
 All these measures may fall short, especially if the attackers use a Zero-Day to gain access.
