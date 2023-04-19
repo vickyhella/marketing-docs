@@ -164,7 +164,6 @@
   <![endif]-->
 </head>
 <body>
-<p>白皮书</p>
 <h1
 id="通过开放灵活的基础设施平台实现面向未来的电信现代化">通过开放灵活的基础设施平台实现面向未来的电信现代化</h1>
 <h2
@@ -181,25 +180,25 @@ Platform，ATIP）是一款可大规模扩展的管理解决方案，适用于�
 <p>在典型的大型数据中心中，要管理的 Kubernetes
 集群数量通常是几十个或最多数百个，而在边缘，集群的数量经常是上千、上万甚至上百万的，而且这是各行各业（包括电信行业）的普遍趋势。为此，用户需要从使用图形
 UI “手动”管理集群转向使用 API 的编程方法来进行管理。</p>
-<p>SUSE 的 Rancher Prime 提供了市场领先的 Kubernetes 管理解决方案，</p>
-<p>它以简单、可靠和出色的用户体验著称。</p>
+<p>SUSE 的 <a href="https://www.rancher.com/products/rancher">Rancher
+Prime</a> 提供了市场领先的 Kubernetes
+管理解决方案，它以简单、可靠和出色的用户体验著称。</p>
+</blockquote>
 <p>为了应对在边缘进行大规模管理的挑战，我们对 Rancher
 进行了两项重要的补充。</p>
-</blockquote>
 <ol type="1">
-<li><p><strong>提供商中立的编程化边缘集群生命周期管理。我们集成了 CNCF
-的 Cluster
+<li><p><strong>提供商中立的编程化边缘集群生命周期管理。</strong>我们集成了
+CNCF 的 Cluster
 API，为整个边缘堆栈（包括裸机和私有云基础设施、操作系统、Kubernetes
 集群和应用程序）的编程管理提供了一个提供商中立的集成点。Rancher UI
 的扩展让你轻松处理边缘基础设施，而且提供了直观的可视化功能，助你了解运营状态、资源利用率和库存。此外，整个边缘基础设施都以
 Kubernetes
 相同的声明方式进行管理。所有管理操作都是通过在中心管理集群上创建和操作
-Kubernetes 自定义资源来完成的。</strong></p></li>
+Kubernetes 自定义资源来完成的。</p></li>
 <li><p><strong>基于 GitOps
-的基础设施管理。边缘的规模要求用户使用更有效和更严格的方法来管理所需的基础设施状态。而
+的基础设施管理。</strong>边缘的规模要求用户使用更有效和更严格的方法来管理所需的基础设施状态。而
 GitOps 就成为了这个问题的解决方案。Rancher 的 GitOps 组件 Fleet 结合了
-Cluster API，支持使用基于 GitOps
-的工作流来管理边缘基础设施。</strong></p></li>
+Cluster API，支持使用基于 GitOps 的工作流来管理边缘基础设施。</p></li>
 </ol>
 <blockquote>
 <p>所需的状态（例如，使用哪个操作系统和 Kubernetes
@@ -219,29 +218,31 @@ GitOps 工具结合使用。</p>
 <li><p>回滚容易，而且 100% 可预测</p></li>
 </ul>
 <blockquote>
-<p><strong>GitOps 引擎会负责将 Git
-仓库的状态定义同步到管理集群，从而将它们转化为所需状态的有效声明。然后，SUSE
-Edge
+<p><strong>GitOps 引擎</strong>会负责将 Git
+仓库的状态定义同步到管理集群，从而将它们转化为所需状态的有效声明。然后，<a
+href="https://www.suse.com/solutions/edge-computing/">SUSE Edge</a>
 管理堆栈会根据声明的所需状态协调边缘基础设施的实际状态，例如，将操作系统和
 Kubernetes
-集群部署到新加入的边缘站点中的裸机主机，更改边缘集群的配置，或在一组边缘集群上同时更新应用程序。</strong></p>
+集群部署到新加入的边缘站点中的裸机主机，更改边缘集群的配置，或在一组边缘集群上同时更新应用程序。</p>
 </blockquote>
 <h2
 id="专为边缘场景量身定制以最低成本获得最佳性能和安全性">专为边缘场景量身定制：以最低成本获得最佳性能和安全性</h2>
+<p><img src="media/image1.png"
+style="width:7.53403in;height:2.95in" /></p>
 <blockquote>
 <p>图 1：基于 GitOps 用于管理边缘基础设施的工作流及其与 SUSE Edge
 系统架构的映射</p>
-<p><strong>针对容器优化的 OS：在 Kubernetes 堆栈中，Linux
+<p><strong>针对容器优化的 OS：</strong>在 Kubernetes 堆栈中，Linux
 操作系统通常只需要企业 Linux 发行版的小部分功能。而 SUSE Linux
 Enterprise (SLE) Micro 是为作为 Kubernetes
-堆栈中的主机操作系统专门设计的。</strong></p>
-<p><strong>安全：针对容器优化的操作系统更安全，因为它的攻击面要小得多。此外，SLE
+堆栈中的主机操作系统专门设计的。</p>
+<p><strong>安全：</strong>针对容器优化的操作系统更安全，因为它的攻击面要小得多。此外，SLE
 Micro
-有一个不可变的根文件系统，攻击者几乎不可能修改系统设置，也无法添加或替换标准系统路径中的二进制文件。</strong></p>
-<p><strong>可靠：SLE Micro
-的事务更新机制保证了更新的原子性，即更新要么成功要么失败，如果失败，系统会自动回滚到之前的状态。这样能避免更新失败导致系统处于损坏状态的情况。</strong></p>
-<p><strong>使用 NeuVector 实现零信任云原生安全：NeuVector
-是市场领先的云原生零信任安全解决方案，不仅提供了传统的漏洞扫描和安全策略合规工具，还具有观察和监控云原生应用运行时行为的独特能力（也称为零信任安全），能抵御传统安全工具无法检测到的大范围攻击媒介，让安全性能达到新的高度。</strong></p>
+有一个不可变的根文件系统，攻击者几乎不可能修改系统设置，也无法添加或替换标准系统路径中的二进制文件。</p>
+<p><strong>可靠：</strong>SLE Micro
+的事务更新机制保证了更新的原子性，即更新要么成功要么失败，如果失败，系统会自动回滚到之前的状态。这样能避免更新失败导致系统处于损坏状态的情况。</p>
+<p><strong>使用 NeuVector 实现零信任云原生安全：</strong>NeuVector
+是市场领先的云原生零信任安全解决方案，不仅提供了传统的漏洞扫描和安全策略合规工具，还具有观察和监控云原生应用运行时行为的独特能力（也称为零信任安全），能抵御传统安全工具无法检测到的大范围攻击媒介，让安全性能达到新的高度。</p>
 </blockquote>
 <h2 id="在边缘使用电信级-os-和-kubernetes轻松可靠">在边缘使用电信级 OS
 和 Kubernetes：轻松可靠</h2>
@@ -249,31 +250,31 @@ Micro
 <p>在高数据包吞吐量和可靠访问系统资源（ CPU
 和内存等）方面，云原生网络功能 (Cloud Native Network Function，CNF)
 有特殊的要求。</p>
+</blockquote>
 <p>有时，由于应用程序需要访问
 GPU、加速板或类似设备，你需要为集群中的特定硬件节点调度应用程序。</p>
-<p>企业 Kubernetes 和 Linux 的典型功能和配置难以满足这些要求。而 SUSE
-ATIP 的设计包含了一组专用技术，用于助力电信行业的典型用例。</p>
+<blockquote>
+<p>企业 Kubernetes 和 Linux 的典型功能和配置难以满足这些要求。<strong>而
+SUSE ATIP
+的设计包含了一组专用技术，用于助力电信行业的典型用例。</strong></p>
 </blockquote>
 <h3 id="node-feature-discovery">Node Feature Discovery</h3>
-<blockquote>
 <p>Node Feature Discovery（NFD）是由 CNCF 开发的 Kubernetes
 附加组件。它能检测底层硬件的特性并相应地标记 Kubernetes 节点，以便
 Kubernetes 调度程序在调度工作负载时能考虑这些特性。你可以在 Rancher
 Manager 集群工具中使用 Node Feature Discovery，并且通过 GUI 或集群 YAML
 定义轻松将其安装到每个下游集群上。</p>
-</blockquote>
 <h3 id="使用-multus-cni-让每个-kubernetes-pod-拥有多个-ip-地址">使用
 Multus CNI 让每个 Kubernetes Pod 拥有多个 IP 地址</h3>
-<blockquote>
 <p>Vanilla Kubernetes 仅支持每个 Kubernetes Pod 拥有一个 IP 地址。有了
 Multus CNI，你可以为 Kubernetes Pod 分配多个 IP 地址。Multus
 只能与一个额外的 CNI 结合使用，该 CNI 服务于正常的集群内部网络（例如
 Control Plane 和 Worker 节点之间的连接）。Whereabouts 用于确保在使用
-Multus 时 Kubernetes Pod 无重叠 IPAM。Multus 是 Rancher Kubernetes
-Engine (RKE2) 中受支持的
+Multus 时 Kubernetes Pod 无重叠 IPAM。Multus 是 <a
+href="https://www.rancher.com/products/rke">Rancher Kubernetes Engine
+(RKE2)</a> 中受支持的
 CNI，可以在创建集群时自动安装。你可以通过集群定义中的功能开关同时安装
 Whereabouts。</p>
-</blockquote>
 <h3 id="单根-io-虚拟化-sr-iov">单根 I/O 虚拟化 (SR-IOV)</h3>
 <blockquote>
 <p>SR-IOV 是用于允许单个物理 PCIe 设备显示为多个虚拟 PCIe
@@ -293,26 +294,24 @@ VF。</p>
 中的普通用户态进程不会一直获得完全确定的性能，这是因为Linux
 内核调度程序可能会将进程移动到不同 CPU
 核，或者进程可能必须与其他进程或内核本身共享对物理系统资源的访问，因此其执行速度可能会受影响。</p>
+</blockquote>
 <p>在这种情况下最需要的功能是 CPU Pinning，它确保进程始终被调度到特定的
 CPU 核，避免了缓存未命中和其他影响性能的因素。</p>
 <p>另一个相关的功能是 CPU 隔离（也称为
 IsolCPU），它可以防止其他进程（包括内核本身）在同一个 CPU 核上运行。所有
 SUSE Linux 变体中使用的 Linux 内核都支持 CPU Pinning 和 IsolCPU。</p>
-</blockquote>
 <h3 id="huge-pages">Huge Pages</h3>
-<blockquote>
 <p>在为数据包 I/O 读写 SR-IOV VF 时，电信 CNF
 需要对大量内存进行低延迟访问。Huge Pages
 显著减少了内存页查找时间和后备缓冲 (TLB) 未命中的情况。所有 SUSE Linux
 变体中使用的 Linux 内核都支持内置的大内存页。Kubernetes
 会自动发现大内存页，并以与标准内存和 CPU
 相同的方式将它们作为可调度资源提供。</p>
-</blockquote>
 <h3 id="kubernetes-中的拓扑感知调度">Kubernetes 中的拓扑感知调度</h3>
-<blockquote>
 <p>有时，确保 Kubernetes 工作负载分配到恰当的资源集（CPU
 内核、内存、PCIe 总线）是非常重要的。为此，Kubernetes 提出了 QoS
 类和资源请求的概念。</p>
+<blockquote>
 <p>由于现代多处理器系统的非统一内存访问 (Non-Uniform Memory
 Access，NUMA) 架构，某些资源可以通过特定 CPU
 插槽和核以更高的带宽访问。简而言之，你可以想象为某些资源之间的距离比其他资源“更近”。换句话说，系统中的资源具有拓扑结构。</p>
@@ -331,22 +330,21 @@ Kubernetes Worker 节点内的资源。因此，要正确设置 NUMA
 </blockquote>
 <h3 id="实时内核"><br />
 实时内核</h3>
-<blockquote>
 <p>一些电信应用程序对触发事件后多久能完成调度有一定的要求。在一般的
 Linux
 系统中，触发事件（例如，软件中断）的延迟取决于系统上运行的内容，因此在很大程度上是不确定的。这样的系统可能会提供足够的性能，但却不能保证确定的性能。Linux
 内核的 PREEMPT_RT 补丁提供了调度任务的能力，可以计算出访问 CPU
-核的可靠上限。包含 PREEMPT-RT 补丁的 Linux 内核通常称为实时内核。SLE
-Micro 提供了使用 SUSE Linux Enterprise 实时内核的选项。</p>
-</blockquote>
+核的可靠上限。包含 PREEMPT-RT 补丁的 Linux 内核通常称为实时内核。<a
+href="https://www.suse.com/products/micro/">SLE Micro</a> 提供了使用
+SUSE Linux Enterprise 实时内核的选项。</p>
 <h2 id="支持电信相关协议和精确定时">支持电信相关协议和精确定时</h2>
 <h3 id="精确时间协议和同步以太网支持">精确时间协议和同步以太网支持</h3>
-<blockquote>
 <p>多个本地系统（例如边缘 Kubernetes
 集群中的多台裸机主机）需要在亚微秒级别内同步时间时，网络时间协议 (NTP)
 等典型的时间协议是不够的。为此，IEEE 标准
 IEEE1588（也称为精确时间协议，PTP）应运而生。SUSE Linux Enterprise 为
 Linux 中可用的所有相关 PTP 实现提供了包。</p>
+<blockquote>
 <p>同步以太网是用于在以太网物理层上传输时钟信号的 ITU-T 标准（定义在
 ITU-T Recommendations G.8261、G.8262 和 G.8264 中），用于为 L2
 广播域中的所有节点提供时间同步源。Linux 内核中的同步以太网 (SyncE)
@@ -365,31 +363,22 @@ id="支持基于数据平面开发工具包-dpdk-的容器工作负载">支持�
 <blockquote>
 <p>目前 SLE Server 15 和 SLE Micro 5.3 支持 DPDK 1.19。从 SLE 15 Service
 Pack 5（计划于 2023 年 Q2 发布）开始，SUSE 将支持 DPDK 1.22.x。</p>
-<p>SUSE Package Hub 和 openSUSE 中也提供了其他 DPDK 版本。</p>
 </blockquote>
+<p><a href="https://packagehub.suse.com/">SUSE Package Hub</a> 和 <a
+href="https://www.opensuse.org/">openSUSE</a> 中也提供了其他 DPDK
+版本。</p>
 <h2 id="摘要">摘要</h2>
-<blockquote>
 <p>我们对下一代电信基础设施的愿景是，让 5G
 和边缘计算使能新型应用程序和用例。</p>
 <p>SUSE ATIP
 通过提供灵活、适应性强的基础架构来支持此类新型应用程序，帮助电信运营商实现网络转型。管理分散在裸机基础设施、公有云和私有云中的大量集群是一项挑战，而
 SUSE 能帮助用户应对这一挑战。同时，我们 30 多年来一直提供关键业务的
 Linux 解决方案，能满足你所期望的功能集和安全要求。</p>
-<p>要了解更多信息，请访问电信行业解决方案、边缘解决方案</p>
-<p>或者</p>
-<p>通过 https://www.suse.com/contact/ 联系我们</p>
-<p>SUSE Software Solutions Germany GmbH</p>
-<p>Frankenstraße 146</p>
-<p>90461Nürnberg Germany</p>
-<p><a href="http://www.suse.com/">www.suse.com</a></p>
-<p>联系方式：</p>
-<p>+1 800 796 3700 (美国/加拿大)</p>
-<p>+49 (0)911-740 53-0 (全球)</p>
-</blockquote>
-<h1 id="感谢">感谢</h1>
-<blockquote>
-<p>SC000032 | © 2023 SUSE LLC. 保留所有权利。SUSE 和 SUSE Logo 是 SUSE
-LLC 在美国和其他国家/地区的注册商标，所有第三方商标均属于其所有者。</p>
-</blockquote>
+<p>要了解更多信息，请访问<u><a
+href="https://www.suse.com/sector/telco/">电信行业解决方案</a>、 <a
+href="https://www.suse.com/solutions/edge-computing/">边缘解决方案</a></u></p>
+<p>或者通过 <a
+href="https://www.suse.com/contact/">https://www.suse.com/contact/</a>
+联系我们</p>
 </body>
 </html>
